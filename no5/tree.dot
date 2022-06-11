@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box] ;
+0 [label="Na <= 0.72\ngini = 0.738\nsamples = 15\nvalue = [3, 4, 5, 3]\nclass = C"] ;
+1 [label="cholesterol=normal <= 0.5\ngini = 0.568\nsamples = 9\nvalue = [1, 0, 5, 3]\nclass = C"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="K <= 0.04\ngini = 0.375\nsamples = 4\nvalue = [1, 0, 0, 3]\nclass = D"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3]\nclass = D"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0, 0, 0]\nclass = A"] ;
+2 -> 4 ;
+5 [label="gini = 0.0\nsamples = 5\nvalue = [0, 0, 5, 0]\nclass = C"] ;
+1 -> 5 ;
+6 [label="age <= 47.5\ngini = 0.444\nsamples = 6\nvalue = [2, 4, 0, 0]\nclass = B"] ;
+0 -> 6 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+7 [label="gini = 0.0\nsamples = 2\nvalue = [2, 0, 0, 0]\nclass = A"] ;
+6 -> 7 ;
+8 [label="gini = 0.0\nsamples = 4\nvalue = [0, 4, 0, 0]\nclass = B"] ;
+6 -> 8 ;
+}
